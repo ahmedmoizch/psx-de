@@ -1,10 +1,10 @@
-### PSX Automated Cloud ETL Pipeline
+# PSX Automated Cloud ETL Pipeline
 
 An end-to-end, automated data engineering project pipeline built on AWS and Databricks. This project automatically scrapes market data from the Pakistan Stock Exchange (PSX), ingests raw CSV files into Amazon S3, and incrementally processes the data into a Medallion Architecture (Delta table) using PySpark and Databricks.
 
 ![Image](https://github.com/ahmedmoizch/psx-de/blob/76b618ff026026eebefe76674d1041475bc58b41/setup/images/Gemini_Generated_Image_1pw9u21pw9u21pw9%20(1).jpg)
 
-### Pipeline Execution
+## Pipeline Execution
 Data Ingestion (AWS Lambda): A lightweight function runs on a scheduled trigger 2 times a day to scrape live market table data from the PSX website and saves the output data csv directly into an Amazon S3 raw bucket with a timestamp CSV.
 
 File Arrival Trigger: The presence of new CSV files in S3 dynamically triggers the processing job in databricks and run the notebooks.
@@ -13,9 +13,9 @@ Incremental ETL: Databricks picks up only the newly arrived CSV files using a py
 
 Medallion Data Store (Delta Table): Data is sequentially transformed across Bronze, Silver, and Gold Delta tables to ensure data quality and auditability.
 
-### Stack
+## Stack
 
-# Cloud Services: AWS (Lambda, S3, IAM)
+Cloud Services: AWS (Lambda, S3, IAM)
 
 Orchestration & Triggering: Databricks Jobs / Event Triggers in Lambda
 
