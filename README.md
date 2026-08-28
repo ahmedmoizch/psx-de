@@ -15,7 +15,7 @@ Medallion Data Store (Delta Table): Data is sequentially transformed across Bron
 
 ### Stack
 
-Cloud Services: AWS (Lambda, S3, IAM)
+# Cloud Services: AWS (Lambda, S3, IAM)
 
 Orchestration & Triggering: Databricks Jobs / Event Triggers in Lambda
 
