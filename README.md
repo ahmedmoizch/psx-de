@@ -23,6 +23,6 @@ Data Processing: PySpark
 
 Storage & Table Format: Amazon S3, Delta Tables
 
-Scraping Libraries: Python (requests, beautifulsoup4, boto3)
+Libraries: Python (requests, beautifulsoup4, pandas boto3)
 
 ![](https://github.com/ahmedmoizch/psx-de/blob/b25926ed05dedb40d7947430003fa34613defe81/setup/images/Capture.PNG)
